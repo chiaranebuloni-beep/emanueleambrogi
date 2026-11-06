@@ -886,3 +886,14 @@ a.channel:hover .ico { background: var(--magenta); color: #fff; }
   .ico-cal .cell { opacity: .35; transform: none; }
 }
 
+
+/* Come funziona: tutte le card sempre nello stato "acceso" (bordeaux) */
+.how-card { color: #fff; --mx: 240px; --my: 180px; }
+.how-card::before { opacity: 1; }
+.how-card .how-spot { opacity: .7; transition: opacity .6s var(--ease), transform 1.2s var(--ease); }
+.how-card h3 { color: #fff; }
+.how-card p { color: rgba(255, 255, 255, .72); }
+.how-card .how-num { color: var(--rose); }
+.how-card .ico { background: rgba(232, 136, 168, .18); color: var(--rose); }
+.how-card .how-bar { background: rgba(255, 255, 255, .12); }
+.how-card:hover .how-spot { opacity: 1; }
